@@ -160,10 +160,13 @@ footer {
 <!-- CONTACT -->
 <section class="section" id="contact">
     <h2>Contact</h2>
-    <input type="text" placeholder="Name"><br>
-    <input type="email" placeholder="Email"><br>
-    <textarea placeholder="Message"></textarea><br>
-    <button>Send</button>
+
+    <form action="https://formspree.io/f/xojkgdrb" method="POST">
+        <input type="text" name="name" placeholder="Name" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <textarea name="message" placeholder="Message" required></textarea><br>
+        <button type="submit">Send</button>
+    </form>
 </section>
 
 <!-- FOOTER -->
